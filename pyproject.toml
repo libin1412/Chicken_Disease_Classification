@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cnnClassifier"
+version = "0.0.0"
+description = "A small python package for CNN app"
+authors = [{ name = "libin1412", email = "libinbabu120@gmail.com" }]
+dependencies = [
+    "tensorflow",
+    "pandas",
+    "dvc",
+    "notebook",
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "python-box==6.0.2",
+    "pyYAML",
+    "tqdm",
+    "ensure==1.0.2",
+    "joblib",
+    "types-PyYAML",
+    "scipy",
+    "Flask",
+    "Flask-Cors"
+]  # Add your dependencies here
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "MIT"}
+dynamic = ["version", "description", "readme"]
+urls = {
+    "Bug Tracker": "https://github.com/libin1412/Chicken-Disease-Classification/issues",
+}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
