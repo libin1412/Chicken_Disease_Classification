@@ -24,7 +24,8 @@ list_of_files = [
     "setup.py",
     "research/trials.ipynb",
     "templates/index.html",
-    "pyproject.toml"
+    "pyproject.toml",
+    "main.py"
 
 
 ]
