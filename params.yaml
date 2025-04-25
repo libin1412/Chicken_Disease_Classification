@@ -1,1 +1,8 @@
-key: val
+AUGMENTATION: True
+IMAGE_SIZE: [224, 224, 3] # as per VGG 16 model
+BATCH_SIZE: 16
+INCLUDE_TOP: False   #since using from pre-trained model and not building from scratch
+EPOCHS: 1
+CLASSES: 2    #coccidiosis and healthy
+WEIGHTS: imagenet    #since its image classification problem
+LEARNING_RATE: 0.01
